@@ -19,6 +19,20 @@ class _BottomScreenState extends State<BottomScreen> {
       body: const Center(
           child: Text("Hello World.")
       ),
+
+      bottomNavigationBar: BottomNavigationBar(
+
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+          BottomNavigationBarItem(icon: Icon(Icons.airplane_ticket), label: 'Ticket'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile')
+        ],
+
+      ),
     );
   }
 }
