@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ticket_booking/screens/bottom_bar.dart';
 
 void main(){
   runApp(const MyApp());
@@ -11,26 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MyHomeScreen(),
+      title: 'Ticket Booking',
+      home: BottomScreen(),
     );
   }
 }
 
-class MyHomeScreen extends StatefulWidget {
-  const MyHomeScreen({Key? key}) : super(key: key);
-
-  @override
-  State<MyHomeScreen> createState() => _MyHomeScreenState();
-}
-
-class _MyHomeScreenState extends State<MyHomeScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Ticket Booking'),
-      ),
-    );
-  }
-}
 
