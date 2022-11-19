@@ -22,8 +22,11 @@ class _BottomScreenState extends State<BottomScreen> {
 
       bottomNavigationBar: BottomNavigationBar(
 
+        elevation: 10,
         showSelectedLabels: false,
         showUnselectedLabels: false,
+        selectedItemColor: Colors.blueGrey,
+        unselectedItemColor: const Color(0xFF526480),
 
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
