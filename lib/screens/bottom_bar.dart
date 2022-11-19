@@ -37,6 +37,7 @@ class _BottomScreenState extends State<BottomScreen> {
             _selectedIndex=index;
           });
         },
+        currentIndex: _selectedIndex,
 
         elevation: 10,
         showSelectedLabels: false,
