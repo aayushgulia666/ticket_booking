@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Ticket Booking',
       home: MyHomeScreen(),
     );
   }
@@ -27,8 +26,10 @@ class MyHomeScreen extends StatefulWidget {
 class _MyHomeScreenState extends State<MyHomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: const Text('Hello World!'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Ticket Booking'),
+      ),
     );
   }
 }
