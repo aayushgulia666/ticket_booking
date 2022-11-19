@@ -1,6 +1,10 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ticket_booking/screens/home.dart';
+import 'package:ticket_booking/screens/profile.dart';
+import 'package:ticket_booking/screens/search.dart';
+import 'package:ticket_booking/screens/ticket.dart';
 
 class BottomScreen extends StatefulWidget {
   const BottomScreen({Key? key}) : super(key: key);
@@ -14,10 +18,10 @@ class _BottomScreenState extends State<BottomScreen> {
    int _selectedIndex=0;
 
    static const List<Widget>_widgetOptions = <Widget>[
-     Text("Home"),
-     Text("Search"),
-     Text("Ticket"),
-     Text("Profile")
+     HomeScreen(),
+     SearchScreen(),
+     TicketScreen(),
+     ProfileScreen(),
    ];
   
   @override
