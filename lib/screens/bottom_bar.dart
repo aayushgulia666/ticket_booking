@@ -1,3 +1,4 @@
+import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -29,10 +30,10 @@ class _BottomScreenState extends State<BottomScreen> {
         unselectedItemColor: const Color(0xFF526480),
 
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-          BottomNavigationBarItem(icon: Icon(Icons.airplane_ticket), label: 'Ticket'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile')
+          BottomNavigationBarItem(icon: Icon(FluentIcons.home_48_regular), activeIcon: Icon(FluentIcons.home_48_filled), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(FluentIcons.search_48_regular), activeIcon: Icon(FluentIcons.search_48_filled), label: 'Search'),
+          BottomNavigationBarItem(icon: Icon(FluentIcons.ticket_diagonal_28_regular), activeIcon: Icon(FluentIcons.ticket_diagonal_28_filled), label: 'Ticket'),
+          BottomNavigationBarItem(icon: Icon(FluentIcons.person_48_regular), activeIcon: Icon(FluentIcons.person_48_filled), label: 'Profile')
         ],
 
       ),
