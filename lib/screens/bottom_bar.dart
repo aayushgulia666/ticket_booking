@@ -38,7 +38,7 @@ class _BottomScreenState extends State<BottomScreen> {
           });
         },
         currentIndex: _selectedIndex,
-
+        type: BottomNavigationBarType.fixed,
         elevation: 10,
         showSelectedLabels: false,
         showUnselectedLabels: false,
