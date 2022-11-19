@@ -10,6 +10,16 @@ class BottomScreen extends StatefulWidget {
 }
 
 class _BottomScreenState extends State<BottomScreen> {
+
+   int _selectedIndex=0;
+
+   static const List<Widget>_widgetOptions = <Widget>[
+     Text("Home"),
+     Text("Search"),
+     Text("Ticket"),
+     Text("Profile")
+   ];
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,11 +27,16 @@ class _BottomScreenState extends State<BottomScreen> {
         title: const Text('Ticket Booking'),
       ),
 
-      body: const Center(
-          child: Text("Hello World.")
+      body: Center(
+          child: _widgetOptions[_selectedIndex],
       ),
 
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (int index){
+          setState(() {
+            _selectedIndex=index;
+          });
+        },
 
         elevation: 10,
         showSelectedLabels: false,
