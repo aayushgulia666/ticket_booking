@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ticket_booking/utils/app_layout.dart';
 import 'package:ticket_booking/utils/app_styles.dart';
+import 'package:ticket_booking/widgets/circle_container.dart';
 
 class TicketView extends StatelessWidget {
   const TicketView({Key? key}) : super(key: key);
@@ -31,6 +32,10 @@ class TicketView extends StatelessWidget {
                   Row(
                     children: [
                       Text("NYC", style: Styles.headlineStyle3.copyWith(color: Colors.white),),
+                      const Spacer(),
+                      const CircleContainer(),
+                      const Spacer(),
+                      const CircleContainer(),
                       const Spacer(),
                       Text("London", style: Styles.headlineStyle3.copyWith(color: Colors.white),),
                     ],
