@@ -57,6 +57,14 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 ),
+                const Gap(30),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Upcoming flights", style: Styles.headlineStyle2,),
+                    Text("View All", style: Styles.textStyle.copyWith(color: Styles.primaryColor),),
+                  ],
+                ),
               ],
             ),
           )
