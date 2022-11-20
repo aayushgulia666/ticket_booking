@@ -2,6 +2,7 @@ import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:ticket_booking/ticket_view.dart';
 
 import '../utils/app_styles.dart';
 
@@ -72,7 +73,9 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          const Gap(25),
+          const TicketView(),
         ],
       )
     );
