@@ -27,10 +27,6 @@ class _BottomScreenState extends State<BottomScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Ticket Booking'),
-      ),
-
       body: Center(
           child: _widgetOptions[_selectedIndex],
       ),
