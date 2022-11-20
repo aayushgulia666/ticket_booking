@@ -62,7 +62,12 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Upcoming flights", style: Styles.headlineStyle2,),
-                    Text("View All", style: Styles.textStyle.copyWith(color: Styles.primaryColor),),
+                    InkWell(
+                      onTap: (){
+                        print("View all tapped");
+                      },
+                        child: Text("View All", style: Styles.textStyle.copyWith(color: Styles.primaryColor),)
+                    ),
                   ],
                 ),
               ],
