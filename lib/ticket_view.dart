@@ -32,11 +32,11 @@ class TicketView extends StatelessWidget {
                   Row(
                     children: [
                       Text("NYC", style: Styles.headlineStyle3.copyWith(color: Colors.white),),
-                      const Spacer(),
+                      Expanded(child: Container()),
                       const CircleContainer(),
-                      const Spacer(),
+                      Expanded(child: Container()),
                       const CircleContainer(),
-                      const Spacer(),
+                      Expanded(child: Container()),
                       Text("London", style: Styles.headlineStyle3.copyWith(color: Colors.white),),
                     ],
                   )
